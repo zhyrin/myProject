@@ -1,104 +1,33 @@
-\:root
-  font-size: 10px
-
-$primary-color: #ccc
-$secondary-color: black
-$header-color: red
-$anchor-color: blue
-$border-color: yellow
-$column-color: green
-$input-color: purple
-$firstvalue: 62.5%
-$firstvalue: 50px default
-$font-diff: (14px/16px)
-$container-width: 900px
-
-body
-  $primaryColor: $primary-color global
-  balsdjfksjdfckground: $primary-color
-  font-size: $firstvalue
-
-p
-  color: $secondary-color
-  font-size: $font-diff
+$button-color: #2793e6
 
 .container
-  width: $container-width
-  h1
-    color: $header-color
-  // @include media("(max-width: 767px)")
-    width: 100%;
-
-.col-4
-  width: $container-width / 4
-
-// The Inception Rule: don’t go more than four levels deep.
-//If possible, don't nest more than four levels
-a.myAnchor
-  color: $anchor-color
-  &:hover
-    text-decoration: line-through
-  &:visited
-    color: purple
-
-.input
-  border-radius: 3px
-  border: 4px solid $border-color
-  color: $input-color
-  font-size: 17px
-  padding: 10px 20px
-  display: inline-block
-  outline: 0
-
-  .error-input
-    @extend .input
-    border: 4px solid $border-color
-
-  %input-style
-    font-size: 20px
-
-  input
-    @extend %input-style
-    color: black
-
-@mixin media($queryString)
-  @media ($queryString)
-    @content
-
-@function getColumnWidth($width, $columns, $margin)
-  @return($width / $columns) - ($margin * 2)
-
-$container-width: 100%
-$column-count: 4
-$margin: 1%
+  width: 470px
+  font-family: monospace
 
 .column
-  background: $column-color
-  height: 200px
-  display: block
   float: left
-  width: getColumnWidth($container-width, $column-count, $margin)
-  margin: 0 $margin
+  width: 50%
+  box-sizing: border-box
+  padding: 10px
 
-.example
-  font-size: 20px
+.buttons
+  padding: 10px
 
-.em
-  background: $primary-color
-  width: 2em
-  font-size: 1.5em
+.buttons button
+  width: 140px
+  height: 40px
+  font-size: 25px
+  font-family: monospace
+  font-weight: bolder
+  background-color: white
+  color: $button-color
+  border: 2px $button-color solid
+  border-radius: 5px
 
-.rem
-  background: $primary-color
-  width: 2em
-  font-size: 2rem
+@media (max-width: 470px)
+  .container
+    width: auto
 
-=large-text
-  font:
-    family: Arial
-    size: 20px
-    weight: bold
-  color: $secondary-color
-
-h1
-  +large-text
+  .column
+    float: none
+    width: auto

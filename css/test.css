@@ -1,0 +1,67 @@
+:root {
+  font-size: 10px; }
+
+body {
+  background: #ccc;
+  font-size: 50px default; }
+
+p {
+  color: black;
+  font-size: 0.875; }
+
+.container {
+  width: 900px; }
+  .container h1 {
+    color: red; }
+
+.col-4 {
+  width: 225px; }
+
+a.myAnchor {
+  color: blue; }
+  a.myAnchor:hover {
+    text-decoration: line-through; }
+  a.myAnchor:visited {
+    color: purple; }
+
+.input, .input .error-input {
+  border-radius: 3px;
+  border: 4px solid yellow;
+  color: purple;
+  font-size: 17px;
+  padding: 10px 20px;
+  display: inline-block;
+  outline: 0; }
+  .input .error-input {
+    border: 4px solid yellow; }
+  .input input, .input .error-input input {
+    font-size: 20px; }
+  .input input, .input .error-input input {
+    color: black; }
+
+.column {
+  background: green;
+  height: 200px;
+  display: block;
+  float: left;
+  width: 23%;
+  margin: 0 1%; }
+
+.example {
+  font-size: 20px; }
+
+.em {
+  background: #ccc;
+  width: 2em;
+  font-size: 1.5em; }
+
+.rem {
+  background: #ccc;
+  width: 2em;
+  font-size: 2rem; }
+
+h1 {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: black; }

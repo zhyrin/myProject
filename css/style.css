@@ -1,67 +1,31 @@
-:root {
-  font-size: 10px; }
-
-body {
-  balsdjfksjdfckground: #ccc;
-  font-size: 50px default; }
-
-p {
-  color: black;
-  font-size: 0.875; }
-
 .container {
-  width: 900px; }
-  .container h1 {
-    color: red; }
-
-.col-4 {
-  width: 225px; }
-
-a.myAnchor {
-  color: blue; }
-  a.myAnchor:hover {
-    text-decoration: line-through; }
-  a.myAnchor:visited {
-    color: purple; }
-
-.input, .input .error-input {
-  border-radius: 3px;
-  border: 4px solid yellow;
-  color: purple;
-  font-size: 17px;
-  padding: 10px 20px;
-  display: inline-block;
-  outline: 0; }
-  .input .error-input {
-    border: 4px solid yellow; }
-  .input input, .input .error-input input {
-    font-size: 20px; }
-  .input input, .input .error-input input {
-    color: black; }
+  width: 470px;
+  font-family: monospace; }
 
 .column {
-  background: green;
-  height: 200px;
-  display: block;
   float: left;
-  width: 23%;
-  margin: 0 1%; }
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px; }
 
-.example {
-  font-size: 20px; }
+.buttons {
+  padding: 10px; }
 
-.em {
-  background: #ccc;
-  width: 2em;
-  font-size: 1.5em; }
+.buttons button {
+  width: 140px;
+  height: 40px;
+  font-size: 25px;
+  font-family: monospace;
+  font-weight: bolder;
+  background-color: white;
+  color: #2793e6;
+  border: 2px #2793e6 solid;
+  border-radius: 5px; }
 
-.rem {
-  background: #ccc;
-  width: 2em;
-  font-size: 2rem; }
-
-h1 {
-  font-family: Arial;
-  font-size: 20px;
-  font-weight: bold;
-  color: black; }
+@media (max-width: 470px) {
+  .container {
+    width: auto; }
+  .column {
+    float: none;
+    width: auto; } }
