@@ -1,9 +1,42 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+body {
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif; }
+
+.hero-section {
+  padding: 0px; }
+
 .container {
-  width: 470px;
-  font-family: monospace; }
+  width: auto; }
+  .container .carrots {
+    fill: #2894e6;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: auto;
+    margin-top: 20px; }
+    .container .carrots h2 {
+      color: rgba(40, 148, 230, 0.6);
+      margin: 5px;
+      text-align: center;
+      border: 2px #2894e6 solid;
+      border-radius: 5px;
+      border-color: inherit;
+      height: 50px; }
+      .container .carrots h2:hover {
+        cursor: pointer;
+        color: white;
+        outline: none;
+        background-color: #2894e6;
+        border-color: inherit; }
 
 .column {
-  float: left;
   width: 50%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -11,21 +44,43 @@
 
 .buttons {
   padding: 10px; }
+  .buttons button {
+    width: 140px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: white;
+    color: rgba(40, 148, 230, 0.6);
+    border: 2px rgba(40, 148, 230, 0.6) solid;
+    border-radius: 5px; }
+    .buttons button:hover {
+      cursor: pointer;
+      color: white;
+      outline: none;
+      background-color: #2894e6;
+      border-color: inherit; }
 
-.buttons button {
-  width: 140px;
-  height: 40px;
-  font-size: 25px;
-  font-family: monospace;
-  font-weight: bolder;
-  background-color: white;
-  color: #2793e6;
-  border: 2px #2793e6 solid;
-  border-radius: 5px; }
+.svg {
+  border: 3px #2894e6 dotted;
+  border-radius: 50px;
+  font-size: 32px;
+  height: 80px;
+  width: 80px; }
+  .svg:hover {
+    border-color: red; }
+
+h1 {
+  position: absolute;
+  left: 39%;
+  top: 20px;
+  font-size: 2em;
+  font-weight: normal;
+  border-bottom: 10px #2894e6 solid;
+  color: #2894e6; }
 
 @media (max-width: 470px) {
   .container {
-    width: auto; }
-  .column {
-    float: none;
-    width: auto; } }
+    width: auto;
+    height: auto; }
+    .container .column {
+      width: auto; } }
